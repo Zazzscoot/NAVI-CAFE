@@ -1,0 +1,140 @@
+#leftDrawer{
+    width: max-content;
+    height: 100vh;
+    z-index: 20;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+}
+
+#arrow{
+    position: relative;
+    z-index: 20;
+    width: 50px;
+    height: auto;
+    color: black;
+    left: 3px;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    top: 50vh;
+}
+
+#content, #cafeContent{
+    width: fit-content;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    color: white;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    transition: all .5s ease;
+    overflow-y: auto;
+}
+
+.pitstopDisplay{
+    display: grid;
+    justify-items: center;
+    box-sizing: border-box;
+    border: 10px;
+    border-color: black;
+    border-radius: 15px;
+    background-color: blanchedalmond;
+    padding: 2px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    min-height: 200px;
+}
+
+.pitstopName {
+    grid-row: 1 2;
+    width: max-content;
+    height: max-content;
+    color: black;
+    font-weight: bolder;
+    font-family: Tahoma;
+    margin-left: 2px;
+    margin-right: 2px;
+    overflow-x: wrap;
+}
+
+.pitstopDescription{
+    grid-row: 2 3;
+    color: black;
+    display: block;
+    width: max-content;
+    height: max-content;
+    font-size: 14px;
+    overflow-x: wrap;
+}
+
+.stopButton{
+    align-items: center;
+    display: inline-flex;
+    max-height: 50px;
+    justify-content: center;
+    width: 250px;
+    font-weight: bold;
+    background-color: lightcoral;
+    border-color: white;
+    border-radius: 25px;
+    color: white;
+    font-size: 22px;
+    transition: background-color 0.5s;
+    transition-timing-function: ease;
+    margin-bottom: 10px;
+}
+
+.stopButton:hover{
+    background-color: lightgray;
+}
+
+p{
+    margin: 0px;
+}
+
+h3{
+    margin: 0px;
+    margin-top: 10px;
+}
+
+#cafeContent{
+    width: fit-content;
+}
+.coffeeShopDisplay{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    width: 420px;
+    background-color: blanchedalmond;
+    margin: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+.cafeName{
+    display: flex;
+    align-content: center;
+    color: black;
+    width: fit-content;
+}
+
+.cafeImage{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.rating{
+    color: black;
+}
+
+#coffeeShopTitle{
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+    text-align: center;
+}
